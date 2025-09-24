@@ -28,6 +28,6 @@ jobs:
         uses: withstudiocms/automations/.github/actions/install@885437ef4376e64fc295161092b8a165bc5efd39 # main
 
       - name: Run Renovate Config Validation
-        run: pnpm renovate -- renovate-config-validator --strict default.json
+        run: pnpm dlx --package renovate -- renovate-config-validator default.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
