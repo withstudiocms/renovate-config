@@ -1,0 +1,11 @@
+{
+	"name": "renovate-config",
+	"private": true,
+	"packageManager": "pnpm@10.17.0",
+	"engines": {
+		"node": "22.19.0"
+	},
+	"dependencies": {
+		"renovate": "^41.127.2"
+	}
+}
