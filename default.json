@@ -30,6 +30,14 @@
         "TRACKER"
     ],
     "minimumReleaseAge": "3 days",
+    "ignoreDeps": [
+        "@types/node",
+        "sharp",
+        "node",
+        "npm",
+        "pnpm",
+        "vite"
+    ],
     "packageRules": [
         {
             "matchDepTypes": [
