@@ -21,7 +21,8 @@
     ],
     "additionalBranchPrefix": "{{parentDir}}-",
     "gitIgnoredAuthors": [
-        "no-reply@studiocms.dev"
+        "no-reply@studiocms.dev",
+        "234251158+apollo-git-bot[bot]@users.noreply.github.com"
     ],
     "prHourlyLimit": 3,
     "rangeStrategy": "bump",
