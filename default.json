@@ -30,7 +30,6 @@
     "dependencyDashboardLabels": [
         "TRACKER"
     ],
-    "minimumReleaseAge": "3 days",
     "ignoreDeps": [
         "@types/node",
         "sharp",
@@ -42,14 +41,9 @@
     "packageRules": [
         {
             "matchDepTypes": [
+                "pnpm.catalog.min",
                 "packageManager",
                 "engines"
-            ],
-            "enabled": false
-        },
-        {
-            "matchDepTypes": [
-                "pnpm.catalog.min"
             ],
             "enabled": false
         },
@@ -61,6 +55,7 @@
         },
         {
             "groupName": "pnpm Workspace Dependencies",
+            "minimumReleaseAge": "3 days",
             "matchManagers": [
                 "npm"
             ],
@@ -69,12 +64,19 @@
             ]
         },
         {
+            "matchDatasources": [
+                "npm"
+            ],
+            "minimumReleaseAge": "3 days"
+        },
+        {
             "groupName": "github-actions",
             "matchManagers": [
                 "github-actions"
             ],
             "updatePinnedDependencies": true,
             "pinDigests": true,
+            "minimumReleaseAge": "0 days",
             "labels": [
                 "github-actions"
             ]
